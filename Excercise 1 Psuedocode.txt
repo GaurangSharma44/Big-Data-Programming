@@ -1,0 +1,14 @@
+Psuedocode for Excercise 1:
+1. Input strings S1 and S2
+	- No special characters or numbers are allowed. 
+	- Strings and result can be case insensitive.
+2. Keep pointer on index [0] on both the strings.
+3. Check if S1[0] matches with S2[0],
+	if yes, increment S1 and S2 by 1.
+	if not, increment only S2 by 1.
+4. Keep incrementing S2 by 1 till it matches any character on S1 (where pointer is).
+5. If S2 exhausts, reset the pointer of S2 back where it matched last and increment S1 by 1.
+6. If there is a character match, push the character to "S3".
+7. Print S3 and the length of S3.
+8. If there is no match, then print that the LCS is "Null".
+9. If any or both the strings are empty, 
